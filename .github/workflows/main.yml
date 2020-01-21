@@ -9,8 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: 'Get Weather'
+      run: bash ./weather.sh
     - name: 'Get Date'
       run: echo "::set-env name=REPORT_DATE::$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')"
     - name: 'Send mail'
@@ -31,6 +31,6 @@ jobs:
         content_type: text/html
 
     - name: Run a multi-line script
-      run: |
+      run:
         echo Add other actions to build,
         echo test, and deploy your project.
