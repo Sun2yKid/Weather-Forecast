@@ -2,7 +2,7 @@
 
 set -eux
 
-CITY=Beijing
+CITY=Zhengzhou
 LANGUAGE="zh-CN"
 UNIT=m
 
